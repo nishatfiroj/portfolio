@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { Open_Sans } from "next/font/google"
+import { Nunito } from "next/font/google"
 import "./globals.css"
 
-const openSans = Open_Sans({
+const montserrat = Nunito({
   subsets: ["latin"],
 })
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <body className={openSans.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   )
 }
