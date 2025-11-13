@@ -21,16 +21,17 @@ import {
 import self from "../../public/png/self.png"
 import nishatsPortfolio from "../../public/svg/nishatsPortfolio.svg"
 import nishatDescriptor from "../../public/svg/nishatDescriptor.svg"
+import koothCard from "../../public/svg/koothCard.svg"
 import spotifyCard from "../../public/svg/spotifyCard.svg"
 import jupiterCard from "../../public/svg/jupiterCard.svg"
 import ncrCard from "../../public/svg/ncrCard.svg"
 import clickForMore from "../../public/svg/clickForMore.svg"
-import stickyNote from "../../public/svg/stickyNote.svg"
 import resumeByMe from "../../public/svg/resumeByMe.svg"
 
 // assets
 import {
   jupiterWorkExperiences,
+  koothWorkExperiences,
   ncrWorkExperiences,
   spotifyWorkExperiences,
   tarotCards,
@@ -83,8 +84,8 @@ export default function Home() {
               <ResponsiveHandwriting
                 src={nishatDescriptor}
                 alt=""
-                width={178}
-                height={102}
+                width={168}
+                height={122}
               />
             </Card>
           </div>
@@ -150,6 +151,24 @@ export default function Home() {
           padding: "64px 0",
         }}
       >
+        <Link href="/kooth" style={{ position: "relative" }}>
+          <Tape top="-12px" right="12px" />
+          <Image src={koothCard} alt="Kooth card" />
+          {/* <Image
+            src={clickForMore}
+            alt="Click to read more"
+            style={{
+              position: "absolute",
+              bottom: 64,
+              left: 20,
+              transform: "rotate(10deg);",
+            }}
+          /> */}
+        </Link>
+        <Paper small>{generateExperiences(koothWorkExperiences)}</Paper>
+
+        <div style={{ padding: "64px 0" }} />
+
         <Link href="/spotify" style={{ position: "relative" }}>
           <Tape top="-12px" right="12px" />
           <Image src={spotifyCard} alt="Spotify card" />
