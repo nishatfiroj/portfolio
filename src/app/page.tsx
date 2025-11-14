@@ -27,6 +27,9 @@ import jupiterCard from "../../public/svg/jupiterCard.svg"
 import ncrCard from "../../public/svg/ncrCard.svg"
 import clickForMore from "../../public/svg/clickForMore.svg"
 import resumeByMe from "../../public/svg/resumeByMe.svg"
+import swipeLeftForMore from "../../public/svg/swipeLeftForMore.svg"
+import linkedIn from "../../public/svg/linkedIn.svg"
+import github from "../../public/svg/github.svg"
 
 // assets
 import {
@@ -93,15 +96,41 @@ export default function Home() {
             <Tape top="-16px" right="30px" />
 
             <Card>
-              <ResponsiveHandwriting src={resumeByMe} alt="" width={178} />
+              <ResponsiveHandwriting
+                src={resumeByMe}
+                alt="Click here for resume"
+                width={178}
+              />
             </Card>
           </Link>
+
+          <div style={{ position: "relative" }}>
+            <Tape top="-16px" left="10px" />
+
+            <Card style={{ justifyContent: "space-around" }}>
+              <div>
+                <Link
+                  href="https://linkedin.com/in/nishatfiroj"
+                  aria-label="Linked-In"
+                >
+                  <ResponsiveHandwriting src={linkedIn} alt="" width={50} />
+                </Link>
+              </div>
+              <div>
+                <Link href="https://github.com/nishatfiroj" aria-label="GitHub">
+                  <ResponsiveHandwriting src={github} alt="" width={50} />
+                </Link>
+              </div>
+            </Card>
+          </div>
         </div>
       </ResponsiveSectionOne>
 
       {/* Second section */}
       <div style={{ padding: "64px 0", textAlign: "center" }}>
-        <h1 className="scroll-text-animation">Swipe left for more</h1>
+        <div className="scroll-text-animation">
+          <ResponsiveHandwriting src={swipeLeftForMore} alt="" width={178} />
+        </div>
         <ResponsiveTarotContainer>
           {tarotCards.map((tarotCard: TarotCardContent, i: number) => (
             <div

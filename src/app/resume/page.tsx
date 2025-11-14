@@ -27,6 +27,7 @@ export default function Resume() {
         top={25}
         left={70}
       />
+
       <ResponsiveiFrame
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNrywt8nXx3Nl4zOCvHYcFz%2FNishat%3Ftype%3Ddesign%26node-id%3D3%253A68%26mode%3Ddesign%26t%3DXkI9SYHhijDRjEui-1"
         allowFullScreen
