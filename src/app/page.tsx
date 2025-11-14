@@ -28,7 +28,7 @@ import ncrCard from "../../public/svg/ncrCard.svg"
 import clickForMore from "../../public/svg/clickForMore.svg"
 import resumeByMe from "../../public/svg/resumeByMe.svg"
 import swipeLeftForMore from "../../public/svg/swipeLeftForMore.svg"
-import linkedIn from "../../public/svg/linkedIn.svg"
+import linkedIn from "../../public/svg/linkedin.svg"
 import github from "../../public/svg/github.svg"
 
 // assets
