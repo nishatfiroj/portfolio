@@ -128,8 +128,12 @@ export default function Home() {
 
       {/* Second section */}
       <div style={{ padding: "64px 0", textAlign: "center" }}>
-        <div className="scroll-text-animation">
-          <ResponsiveHandwriting src={swipeLeftForMore} alt="" width={178} />
+        <div className="scroll-text">
+          <ResponsiveHandwriting
+            src={swipeLeftForMore}
+            alt="Swipe left for more"
+            width={178}
+          />
         </div>
         <ResponsiveTarotContainer>
           {tarotCards.map((tarotCard: TarotCardContent, i: number) => (

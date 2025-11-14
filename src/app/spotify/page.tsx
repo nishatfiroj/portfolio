@@ -13,7 +13,7 @@ import StickyNote from "@/components/sticky-note"
 import { GoBackButton } from "@/components/go-back"
 
 // styled components
-import { Break, Caption, Card } from "../styled"
+import { Break, Caption, Card, ResponsiveHandwriting } from "../styled"
 import { ResponsiveImageCardContainer } from "./styled"
 
 // svgs
@@ -31,6 +31,7 @@ import vinylStats3 from "../../../public/svg/spotify-svg/vinylStats3.svg"
 import vinylStats4 from "../../../public/svg/spotify-svg/vinylStats4.svg"
 import vinylStats5 from "../../../public/svg/spotify-svg/vinylStats5.svg"
 import vinylStats6 from "../../../public/svg/spotify-svg/vinylStats6.svg"
+import swipeLeftForMore from "../../../public/svg/swipeLeftForMore.svg"
 
 // pngs
 import shopWebiPhone from "../../../public/png/shop_web_mobile.png"
@@ -154,7 +155,13 @@ export default function Spotify() {
         </div>
 
         <div style={{ padding: "64px 0", textAlign: "center" }}>
-          <h1 className="scroll-text-animation">Swipe left for more</h1>
+          <div className="scroll-text">
+            <ResponsiveHandwriting
+              src={swipeLeftForMore}
+              alt="Swipe left for more"
+              width={178}
+            />
+          </div>
           <ResponsiveImageCardContainer>
             {spotifyMobileImages.map((mobileImage: ImageCard, i: number) => (
               <div key={i} style={{ margin: "0px 32px", maxWidth: "350px" }}>
@@ -201,7 +208,9 @@ export default function Spotify() {
           audio.
         </Paper>
 
-        <h1 className="scroll-text-animation">Swipe left for more</h1>
+        <div className="scroll-text">
+          <ResponsiveHandwriting src={swipeLeftForMore} alt="" width={178} />
+        </div>
         <ResponsiveImageCardContainer>
           {spotifyDesktopImages.map((desktopImage: ImageCard, i: number) => (
             <div key={i} style={{ margin: "8px", maxWidth: "350px" }}>
