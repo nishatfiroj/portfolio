@@ -196,7 +196,7 @@ export const jupiterWorkExperiences: WorkExperience[] = [
   {
     title: "Jupiter Magazine",
     description:
-      "Jupiter Magazine is a quarterly magazine promoting Black art, literature, and culture in NYC, with thousands of monthly readers. this online publication highlights renowned Black New York Times best selling authors, NYT staff writers, The Republic Magazine authors, and more, via a NextJS web application and PostgreSQL.",
+      "Jupiter Magazine is a quarterly magazine promoting Black art, literature, and culture in NYC, with thousands of monthly readers. This online publication highlights renowned Black New York Times best selling authors, NYT staff writers, The Republic Magazine authors, and more, via a NextJS web application and PostgreSQL.",
   },
 ]
 
